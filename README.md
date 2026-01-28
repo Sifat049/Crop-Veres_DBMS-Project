@@ -100,9 +100,92 @@ The system heavily relies on **relational database design**, **normalization**, 
 ---
 
 ## 🗂️ Project Structure
+cropverse/
+├── client/
+│ ├── index.html
+│ ├── login.html
+│ ├── signup.html
+│ ├── farmer/
+│ ├── buyer/
+│ ├── admin/
+│ ├── css/
+│ └── js/
+│
+├── server/
+│ ├── app.js
+│ ├── db.js
+│ ├── schema.sql
+│ ├── mailer.js
+│ ├── uploads/
+│ └── package.json
+│
+└── README.md
 
 
+---
 
-## 🗂️ Project Structure
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/cropverse.git
+cd cropverse
+
+2️⃣ Install Server Dependencies
+cd server
+npm install
+
+3️⃣ Database Setup
+
+Open MySQL Workbench
+
+Run:
+
+CREATE DATABASE cropverse;
+USE cropverse;
+
+
+Execute schema.sql
+
+4️⃣ Environment Configuration
+
+Create .env inside server/
+
+PORT=4000
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=your_password
+DB_NAME=cropverse
+JWT_SECRET=your_secret
+ADMIN_EMAIL=admin@example.com
+
+5️⃣ Start Server
+npm start
+
+
+Server runs at:
+
+http://localhost:4000
+
+🔐 User Roles & Access
+Role	Admin Approval Required
+Admin	❌
+Farmer	✅
+Buyer	✅
+📸 Screenshots
+
+Screenshots will be added here
+
+Login Page
+
+Farmer Dashboard
+
+Buyer Marketplace
+
+Admin Dashboard
+
+Price Trend Charts
+
+
 <img width="1677" height="1074" alt="Screenshot 2026-01-29 at 1 07 01 AM" src="https://github.com/user-attachments/assets/06c63513-3034-4bcd-b234-c53913471a55" />
 
