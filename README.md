@@ -1,31 +1,59 @@
-# 🌱 CropVerse  
-### Smart Climate-Aware Farmer Support & Marketplace System
+# 🌾 CropVerse  
+## Smart Climate-Aware Farmer Support & Marketplace System
 
-CropVerse is a **DBMS-driven web application** designed to support farmers and buyers by providing a transparent agricultural marketplace with analytics, automation, and role-based dashboards.
+CropVerse is a **DBMS-centric web application** designed to improve transparency, efficiency, and data-driven decision-making in the agricultural sector of Bangladesh.  
+The platform connects **Farmers**, **Buyers**, and **Administrators** through a centralized marketplace powered by **MySQL database intelligence**.
 
-This project is developed as part of **CSE 3522 – Database Management Systems Lab**.
+> 📘 Developed as part of **CSE 3522 – Database Management Systems Lab**
 
 ---
 
-## 📌 Features Overview
+## 📖 Table of Contents
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [DBMS Concepts Used](#-dbms-concepts-used)
+- [Technology Stack](#-technology-stack)
+- [Project Structure](#-project-structure)
+- [Installation & Setup](#️-installation--setup)
+- [User Roles & Access](#-user-roles--access)
+- [Screenshots](#-screenshots)
+- [Future Enhancements](#-future-enhancements)
+- [Testing](#-testing)
+- [Course Information](#-course-information)
+- [Author](#-author)
+
+---
+
+## 🌱 Overview
+
+CropVerse provides a **digital agricultural ecosystem** where farmers can sell crops directly to buyers without middlemen, buyers can analyze price trends, and administrators can ensure platform integrity through approvals and monitoring.
+
+The system heavily relies on **relational database design**, **normalization**, **triggers**, and **aggregation queries** to automate insights and maintain data integrity.
+
+---
+
+## ✨ Key Features
 
 ### 👨‍🌾 Farmer
-- Create crop listings
-- View dashboard statistics:
+- Create and manage crop listings
+- Dashboard analytics:
   - Total products
   - Active listings
-  - Total sold quantity
+  - Total quantity sold
   - Total earnings
 - Report crop diseases
-- View alerts
+- View alerts generated from disease severity
 - Analyze crop price trends
 
 ### 🛒 Buyer
-- Browse available crop listings
-- Search by crop, farmer, or district
+- Browse available crops
+- Search by:
+  - Crop name
+  - Farmer name
+  - District
 - Purchase crops
 - View total purchase amount
-- Analyze price trends
+- Analyze historical price trends
 
 ### 🛡️ Admin
 - Approve farmer & buyer signups
@@ -35,36 +63,45 @@ This project is developed as part of **CSE 3522 – Database Management Systems 
 
 ---
 
-## 🧠 Core DBMS Concepts Used
+## 🧠 DBMS Concepts Used
 
 - Relational Database Design
 - BCNF & 3NF Normalization
 - Primary & Foreign Keys
-- Triggers (price trend updates, alerts)
-- Aggregation queries
+- Triggers (price trend update, alert generation)
+- Aggregation queries (SUM, COUNT, AVG)
 - Role-based access control
+- Transaction management
 
 ---
 
 ## 🛠️ Technology Stack
 
 ### Frontend
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Responsive UI + Dark Mode
+- HTML5  
+- CSS3 (Responsive + Dark Mode)  
+- Vanilla JavaScript  
 
 ### Backend
-- Node.js
-- Express.js
-- JWT Authentication
-- bcrypt password hashing
+- Node.js  
+- Express.js  
+- JWT Authentication  
+- bcrypt password hashing  
 
 ### Database
-- MySQL
-- Triggers & Aggregation Queries
+- MySQL  
+- Triggers & analytical queries  
+
+### Tools
+- VS Code  
+- MySQL Workbench  
+- GitHub  
 
 ---
+
+## 🗂️ Project Structure
+
+
 
 ## 🗂️ Project Structure
 <img width="1677" height="1074" alt="Screenshot 2026-01-29 at 1 07 01 AM" src="https://github.com/user-attachments/assets/06c63513-3034-4bcd-b234-c53913471a55" />
