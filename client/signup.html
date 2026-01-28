@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Signup - CropVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <span class="logo">CropVerse</span>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="login.html">Login</a>
+      <a class="navlink active" href="signup.html">Signup</a>
+    </div>
+    <div class="right">
+      <button id="themeToggle" class="ghost">🌓</button>
+    </div>
+  </div>
+
+  <div class="container narrow">
+    <div class="card fade">
+      <h1>Create Account</h1>
+      <form id="signupForm" class="stack">
+        <label>Full Name</label>
+        <input id="name" required />
+
+        <label>Email</label>
+        <input id="email" type="email" required />
+
+        <label>Role</label>
+        <select id="role" required>
+          <option value="farmer">Farmer</option>
+          <option value="buyer">Buyer</option>
+        </select>
+
+        <label>District</label>
+        <input id="district" placeholder="e.g., Bogura" />
+
+        <label>Profile Photo (optional)</label>
+        <input id="avatar" type="file" accept="image/*" />
+
+        <label>Password</label>
+        <input id="password" type="password" required />
+
+        <label>Confirm Password</label>
+        <input id="confirm" type="password" required />
+
+        <button type="submit">Submit Signup</button>
+        <p id="msg" class="muted"></p>
+
+        <p class="muted">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/api.js"></script>
+  <script src="./js/signup.js"></script>
+</body>
+</html>

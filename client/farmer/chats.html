@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Farmer Chats - CropVerse</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <span class="badge">Farmer</span>
+      <a class="navlink" href="dashboard.html">Dashboard</a>
+      <a class="navlink" href="marketplace.html">Create Listing</a>
+      <a class="navlink" href="my-listings.html">My Listings</a>
+      <a class="navlink active" href="chats.html">My Chats</a>
+      <a class="navlink" href="profile.html">Profile</a>
+      <a class="navlink" href="price-chart.html">Price Chart</a>
+      <a class="navlink" href="disease-report.html">Disease Report</a>
+    </div>
+    <div class="right">
+      <button id="themeToggle" class="ghost">🌓</button>
+      <button class="danger" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>💬 My Chats</h1>
+      <p class="muted">Buyers can message you from the Marketplace. Click a chat to reply.</p>
+    </div>
+
+    <div class="card fade">
+      <div id="threadsBox" class="stack"></div>
+      <p id="threadsMsg" class="muted"></p>
+    </div>
+  </div>
+
+  <!-- Chat Modal -->
+  <div id="chatModal" class="modal hidden">
+    <div class="modalCard">
+      <div class="modalTop">
+        <h2 id="chatTitle">💬 Chat</h2>
+        <button id="chatClose" class="ghost">✖</button>
+      </div>
+      <div id="chatBox" style="height:280px; overflow:auto; margin-top:10px; padding:10px; border:1px solid var(--border); border-radius:14px; background: var(--card2);"></div>
+      <div class="row" style="gap:10px; margin-top:10px;">
+        <button id="chatEmoji" class="ghost" title="Emoji">🙂</button>
+        <button id="chatImageBtn" class="ghost" title="Send image">📸</button>
+        <input id="chatImage" type="file" accept="image/*" hidden />
+        <input id="chatInput" placeholder="Type a message..." style="flex:1" />
+        <button id="chatSend">Send</button>
+      </div>
+      <div id="emojiPanel" class="emojiPanel hidden"></div>
+      <p id="chatHint" class="muted" style="margin-top:8px;"></p>
+    </div>
+  </div>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/chat.js"></script>
+  <script src="../js/farmer_chats.js"></script>
+</body>
+</html>

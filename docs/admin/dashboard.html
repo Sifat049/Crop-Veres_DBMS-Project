@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Admin Dashboard - CropVerse</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <span class="badge">Admin</span>
+      <a class="navlink active" href="dashboard.html">Dashboard</a>
+      <a class="navlink" href="../index.html">Home</a>
+    </div>
+    <div class="right">
+      <button id="themeToggle" class="ghost">🌓</button>
+      <button class="danger" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>🛡️ Admin Dashboard</h1>
+      <p class="muted">Approve signup requests and monitor users.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="card fade">
+        <div class="row space">
+          <h2>✅ Pending Signup Requests</h2>
+          <button id="btnRefresh" class="ghost">Refresh</button>
+        </div>
+        <div id="pendingBox" class="stack"></div>
+        <p id="pendingMsg" class="muted"></p>
+      </div>
+
+      <div class="card fade">
+        <div class="row space">
+          <h2>📋 All Users</h2>
+          <button id="btnLoadAll" class="ghost">Load</button>
+        </div>
+        <div id="usersBox" class="stack"></div>
+        <p id="usersMsg" class="muted"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Verify Email - CropVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <span class="logo">CropVerse</span>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="login.html">Login</a>
+      <a class="navlink" href="signup.html">Signup</a>
+      <a class="navlink active" href="verify.html">Verify</a>
+    </div>
+    <div class="right">
+      <button id="themeToggle" class="ghost">🌓</button>
+    </div>
+  </div>
+
+  <div class="container narrow">
+    <div class="card fade">
+      <h1>Verify Email</h1>
+      <p class="muted">Enter the 6-digit code. (It is sent to admin email in this demo setup.)</p>
+
+      <form id="verifyForm" class="stack">
+        <label>Email</label>
+        <input id="email" type="email" required />
+
+        <label>Code</label>
+        <input id="code" inputmode="numeric" placeholder="e.g., 482913" required />
+
+        <button type="submit">Submit</button>
+        <p id="msg" class="muted"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/api.js"></script>
+  <script src="./js/verify.js"></script>
+</body>
+</html>

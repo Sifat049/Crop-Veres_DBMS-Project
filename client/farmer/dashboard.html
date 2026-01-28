@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Farmer Dashboard - CropVerse</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <span class="badge">Farmer</span>
+      <a class="navlink active" href="dashboard.html">Dashboard</a>
+      <a class="navlink" href="marketplace.html">Create Listing</a>
+      <a class="navlink" href="my-listings.html">My Listings</a>
+      <a class="navlink" href="chats.html">My Chats</a>
+      <a class="navlink" href="profile.html">Profile</a>
+      <a class="navlink" href="price-chart.html">Price Chart</a>
+      <a class="navlink" href="disease-report.html">Disease Report</a>
+    </div>
+    <div class="right">
+      <button id="themeToggle" class="ghost">🌓</button>
+      <button class="danger" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <div class="profileHead">
+        <img id="profileImg" class="avatar" alt="Profile" />
+        <div>
+          <h1 id="profileName">🌾 Farmer Dashboard</h1>
+          <p class="muted" id="profileMeta">Track your listings, sales, and alerts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid3">
+      <div class="card stat fade">
+        <div class="statIcon">📦</div>
+        <div class="statLabel">Total Listings</div>
+        <div class="statValue" id="totalListings">0</div>
+      </div>
+      <div class="card stat fade">
+        <div class="statIcon">✅</div>
+        <div class="statLabel">Active Listings</div>
+        <div class="statValue" id="activeListings">0</div>
+      </div>
+      <div class="card stat fade">
+        <div class="statIcon">💵</div>
+        <div class="statLabel">Earnings (৳)</div>
+        <div class="statValue" id="earnings">0</div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card fade">
+        <h2>🚨 Recent Alerts</h2>
+        <div id="alertsBox" class="stack"></div>
+      </div>
+
+      <div class="card fade">
+        <h2>Quick Actions</h2>
+        <div class="actions">
+          <a class="btn" href="marketplace.html">Create Listing</a>
+          <a class="btn ghost" href="my-listings.html">Manage Listings</a>
+          <a class="btn ghost" href="disease-report.html">Report Disease</a>
+        </div>
+        <p id="dashMsg" class="muted"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/farmer_dashboard.js"></script>
+</body>
+</html>

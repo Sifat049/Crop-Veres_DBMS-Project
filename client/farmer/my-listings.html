@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>My Listings - CropVerse</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <span class="badge">Farmer</span>
+      <a class="navlink" href="dashboard.html">Dashboard</a>
+      <a class="navlink" href="marketplace.html">Create Listing</a>
+      <a class="navlink active" href="my-listings.html">My Listings</a>
+      <a class="navlink" href="chats.html">My Chats</a>
+      <a class="navlink" href="profile.html">Profile</a>
+      <a class="navlink" href="price-chart.html">Price Chart</a>
+      <a class="navlink" href="disease-report.html">Disease Report</a>
+    </div>
+    <div class="right">
+      <button id="themeToggle" class="ghost">🌓</button>
+      <button class="danger" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>📦 My Listings</h1>
+      <p class="muted">Edit or delete your listings.</p>
+    </div>
+
+    <div class="card fade">
+      <div id="myList" class="stack"></div>
+      <p id="msg" class="muted"></p>
+    </div>
+  </div>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/farmer_my_listings.js"></script>
+</body>
+</html>
