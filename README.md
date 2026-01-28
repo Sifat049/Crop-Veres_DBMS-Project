@@ -123,69 +123,56 @@ cropverse/
 
 
 ---
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/your-username/cropverse.git
-cd cropverse
-
-2️⃣ Install Server Dependencies
-cd server
-npm install
-
-3️⃣ Database Setup
-
-Open MySQL Workbench
-
-Run:
-
-CREATE DATABASE cropverse;
-USE cropverse;
-
-
-Execute schema.sql
-
-4️⃣ Environment Configuration
-
-Create .env inside server/
-
-PORT=4000
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=your_password
-DB_NAME=cropverse
-JWT_SECRET=your_secret
-ADMIN_EMAIL=admin@example.com
-
-5️⃣ Start Server
-npm start
-
-
-Server runs at:
-
-http://localhost:4000
-
-🔐 User Roles & Access
-Role	Admin Approval Required
-Admin	❌
-Farmer	✅
-Buyer	✅
 📸 Screenshots
-
-Screenshots will be added here
-
-Login Page
 
 Farmer Dashboard
 
-Buyer Marketplace
+Create Crop Listing
 
-Admin Dashboard
+My Listings Management
 
-Price Trend Charts
+Chat Interface
 
+Price Trend Chart
+
+Disease Reporting Page
 
 <img width="1677" height="1074" alt="Screenshot 2026-01-29 at 1 07 01 AM" src="https://github.com/user-attachments/assets/06c63513-3034-4bcd-b234-c53913471a55" />
+
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/cropverse.git
+cd cropverse
+2️⃣ Install Dependencies
+npm install
+3️⃣ Run the Project
+npm start
+
+Open in browser:
+
+http://127.0.0.1:5500/client/farmer/dashboard.html
+🎯 Future Improvements
+
+AI-based crop demand forecasting
+
+Mobile app version
+
+Multi-language support
+
+Weather-based crop alerts
+
+🤝 Contributors
+
+Mishkat – Frontend & System Design
+
+Team Members – Backend & AI Models
+
+📜 License
+
+This project is for educational and research purposes.
+
+⭐ If you like this project, don’t forget to star the repo!
+
+
+
 
