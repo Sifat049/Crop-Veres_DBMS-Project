@@ -141,16 +141,20 @@ Disease Reporting Page
 
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/cropverse.git
+
+git clone https://github.com/Sifat049/cropverse.git
 cd cropverse
+
 2️⃣ Install Dependencies
 npm install
+
 3️⃣ Run the Project
 npm start
 
 Open in browser:
 
 http://127.0.0.1:5500/client/farmer/dashboard.html
+
 🎯 Future Improvements
 
 AI-based crop demand forecasting
