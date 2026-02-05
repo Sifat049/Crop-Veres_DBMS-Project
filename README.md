@@ -102,6 +102,7 @@ The system heavily relies on **relational database design**, **normalization**, 
 
 ---
 
+
 ## 🗂️ Project Structure
 cropverse/
 ├── client/
