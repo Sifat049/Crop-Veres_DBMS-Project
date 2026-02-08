@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 # 🌾 CropVerse  
 ## Smart Climate-Aware Farmer Support & Marketplace System
 
