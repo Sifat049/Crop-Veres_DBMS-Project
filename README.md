@@ -15,6 +15,8 @@ The platform connects **Farmers**, **Buyers**, and **Administrators** through a 
 
 > 📘 Developed as part of **CSE 3522 – Database Management Systems Lab**
 
+
+
 ---
 
 ## 📖 Table of Contents
