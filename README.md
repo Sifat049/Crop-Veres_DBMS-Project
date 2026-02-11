@@ -123,8 +123,7 @@ cropverse/
 │ ├── admin/
 │ ├── css/
 │ └── js/
-
-
+|
 ├── server/
 │ ├── app.js
 │ ├── db.js
